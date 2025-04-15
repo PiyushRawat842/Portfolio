@@ -1,164 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piyush Rawat | Portfolio</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { background: #f5f5f5; color: #333; text-align: center; }
-        header { background: #222; color: white; padding: 20px; font-size: 22px; }
-        section { padding: 50px 20px; }
-        .btn { display: inline-block; padding: 10px 20px; margin: 10px; background: #ff5733; color: white; text-decoration: none; border-radius: 5px; }
-        .btn:hover { background: #c70039; }
-        .container { max-width: 800px; margin: auto; }
-        img { width: 150px; border-radius: 50%; margin: 20px 0; }
-        .projects, .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .project-card, .skill-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .skill-card img { width: 60px; height: 60px; margin-bottom: 10px; }
-        footer { background: #222; color: white; padding: 10px; margin-top: 20px; }
-        @media (max-width: 600px) { .projects, .skills { grid-template-columns: 1fr; } }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Piyush Rawat | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      font-size: 22px;
+    }
+
+    section {
+      padding: 50px 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background: #ff5733;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background: #c70039;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+      margin: 20px 0;
+    }
+
+    .projects,
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .project-card,
+    .skill-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .skill-card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+      border-radius: 0;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .projects,
+      .skills {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>Piyush Rawat</header>
+  <header>Piyush Rawat</header>
 
-    <section>
-        <img src="images/piyu.jpg" alt="Profile Photo"> 
-        <h2>Hello, I'm Piyush</h2>
-        <p>Aspiring Data Analyst | Business Analyst | Data Visualization </p>
-        <a href="https://github.com/Goblinpiyush" class="btn" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/piyush-rawat8/" class="btn" target="_blank">LinkedIn</a>
-        <a href="mailto:your-email@gmail.com" class="btn">Contact Me</a>
-    </section>
-
-    <section class="container">
-        <h2>Technical Skills</h2>
-        <div class="skills">
-            <div class="skill-card">
-               <img src="images/python.jpg" alt="Python">
-                <h3>Python</h3>
-            </div>
-            <div class="skill-card">
-               <img src="images/sql.jpg" alt="SQL">
-                <h3>SQL</h3>
-            </div>
-            <div class="skill-card">
-                <img src="images/power-bi-software.jpg" alt="Power BI Software">
-                <h3>Power BI</h3>
-            </div>
-            <div class="skill-card">
-               <img src="images/images.png" alt="Images Icon">
-                <h3>Excel</h3>
-            </div>
-            <div class="skill-card">
-               <img src="images/project_mgmt.jpg" alt="Images Icon">
-                <h3>Project Management</h3>
-            </div>
-             <div class="skill-card">
-               <img src="images/google_sheets.jpg" alt="Images Icon">
-                <h3>Google Sheets</h3>
-            </div>
-        </div>
-    </section>
+  <section>
+    <img src="images/piyu.jpg" alt="Profile Photo" class="profile-img" />
+    <h2>Hello, I'm Piyush</h2>
+    <p>Aspiring Data Analyst | Business Analyst | Data Visualization</p>
+    <a href="https://github.com/Goblinpiyush" class="btn" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/piyush-rawat8/" class="btn" target="_blank">LinkedIn</a>
+    <a href="mailto:piyushwork248@gmail.com" class="btn">Contact Me</a>
+  </section>
 
   <section class="container">
-    <h2>Projects</h2>
-    <br>
-    <div class="projects">
-        <div class="project-card">
-            <h3>Road Accidents Tableau Dashboard</h3>
-            <img src="images/road_accident.png" alt="Road Accident"
-                style="width: 100%; height: 200px; object-fit: cover;">
-            <p>• Identified critical risk patterns in road safety...<br>
-                • Achieved a 51% reduction in cyclist fatalities...<br>
-                • Designed an interactive Tableau dashboard...
-            </p>
-            <a href="https://github.com/Goblinpiyush/Road_Accidents_Tableau_Dashboard" class="btn">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Excel Sales Analysis Dashboard</h3>
-            <img src="images/Coffee sales dashboard.png" alt="Coffee Sales Dashboard"
-                style="width: 100%; height: 200px; object-fit: cover;">
-            <p>• Analyzed sales data from 5,000+ transactions...<br>
-                • Used advanced Excel features like Pivot Tables...
-            </p>
-            <a href="https://github.com/Goblinpiyush/Coffee_Sales_Dashboard_Excel" class="btn">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <h3>ChatGPT vs Deepseek AI Model</h3>
-            <img src="images/ai model.png" alt="AI Model"
-                style="width: 100%; height: 200px; object-fit: cover;">
-            <p>• Queried and analyzed 10,000 records using SQL...<br>
-                • Created analytical queries to measure churn rate...
-            </p>
-            <a href="https://github.com/Goblinpiyush/Music_store_analysis_using_Postgresql" class="btn">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Blinkit Sales Analysis Dashboard</h3>
-            <img src="images/blinkit.png" alt="Blinkit"
-                style="width: 100%; height: 200px; object-fit: cover;">
-            <p>• Built an interactive Power BI dashboard...<br>
-                • Analyzed 10,000+ sales records to uncover trends...
-            </p>
-            <a href="https://github.com/Goblinpiyush/BLINKIT_DASBOARD" class="btn">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <h3>LinkedIn Job Data Analysis</h3>
-            <img src="images/linkedin.png" alt="LinkedIn"
-                style="width: 100%; height: 200px; object-fit: cover;">
-            <p>• Scraped and analyzed 500+ job postings...<br>
-                • Conducted EDA on 200+ job roles using Python...
-            </p>
-            <a href="https://github.com/Goblinpiyush/LinkedIN_Job_Analysis" class="btn">View Project</a>
-        </div>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="skill-card">
+        <img src="images/python.jpg" alt="Python" />
+        <h3>Python</h3>
+      </div>
+      <div class="skill-card">
+        <img src="images/sql.jpg" alt="SQL" />
+        <h3>SQL</h3>
+      </div>
+      <div class="skill-card">
+        <img src="images/power-bi-software.jpg" alt="Power BI Software" />
+        <h3>Power BI</h3>
+      </div>
+      <div class="skill-card">
+        <img src="images/images.png" alt="Excel" />
+        <h3>Excel</h3>
+      </div>
+      <div class="skill-card">
+        <img src="images/project_mgmt.jpg" alt="Project Management" />
+        <h3>Project Management</h3>
+      </div>
+      <div class="skill-card">
+        <img src="images/google_sheets.jpg" alt="Google Sheets" />
+        <h3>Google Sheets</h3>
+      </div>
     </div>
-</section>
+  </section>
 
+  <section class="container">
+    <h2>Projects</h2><br>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Road Accidents Tableau Dashboard</h3>
+        <img src="images/road_accident.png" alt="Road Accident" />
+        <p>• Identified critical risk patterns in road safety...<br>• Achieved a 51% reduction in cyclist fatalities...<br>• Designed an interactive Tableau dashboard...</p>
+        <a href="https://github.com/Goblinpiyush/Road_Accidents_Tableau_Dashboard" class="btn">View Project</a>
+      </div>
 
-    <section class="container">
-        <h2>About Me</h2>
-       <img src="images/piyu.jpg" alt="Profile Photo">
-        <p>Aspiring Data Analyst with hands-on experience in data manipulation, visualization, and analysis.I've become obsessed with data. I've fallen in love with Power BI and the ability to take a table of numbers & transform it into meaningful insights. I'm currently looking for Data Analyst Roles.<br>
-            I'm proficient in analyzing data with:<br>
-            - Excel<br>
-            - PowerBI<br>
-            - SQL<br>
-            - Python<br>
-            - R<br>
-            And I'm looking to help a company extract insights from their data. Eager to bring expertise in data analysis and business intelligence to a Fresher Data Analyst or Business Analyst role. If you'd like to contact me, feel free to email me: piyushwork248@gmail.com</p>
-    </section>
+      <div class="project-card">
+        <h3>Excel Sales Analysis Dashboard</h3>
+        <img src="images/Coffee sales dashboard.png" alt="Coffee Sales Dashboard" />
+        <p>• Analyzed sales data from 5,000+ transactions...<br>• Used advanced Excel features like Pivot Tables...</p>
+        <a href="https://github.com/Goblinpiyush/Coffee_Sales_Dashboard_Excel" class="btn">View Project</a>
+      </div>
 
-    <section class="container">
-        <h2>Experience</h2>
-        <div class="project-card">
-            <h3>Data Analyst Intern (Kulture Hire)</h3>
-            <p><strong>Mar 2025 – Apr 2025 | 4-week Virtual Internship</strong></p>
-            <ul style="text-align: left; margin: 10px auto; width: fit-content;">
-                • Analyzed collected Gen-Z data using the SQL joins and aggregate functions to extract valuable insights.<br>
-                • Utilized Google Forms to gather career goals and learning preferences data for Generation Z.<br>
-                • Created dynamic dashboards in Excel and Power BI, integrating Pivot Charts and Slicers for enhanced visualization and filtering.<br>
-            </ul>
-        </div>
-    </section>
-        <div class="project-card">
-            <h3>Quality Analyst (Jackett)</h3>
-            <p><strong>Aug 2022 – Jan 2023 | Remote</strong></p>
-            <ul style="text-align: left; margin: 10px auto; width: fit-content;">
-                <li>Conducted comprehensive quality assessments on 300-400 questions daily, enhancing content accuracy and reliability.</li>
-                <li>Received Intern of the Month recognition for significantly improving content accuracy and user engagement through rigorous quality checks and enhancements.</li>
-            </ul>
-        </div>
-    </section>
+      <div class="project-card">
+        <h3>ChatGPT vs Deepseek AI Model</h3>
+        <img src="images/ai model.png" alt="AI Model" />
+        <p>• Queried and analyzed 10,000 records using SQL...<br>• Created analytical queries to measure churn rate...</p>
+        <a href="https://github.com/Goblinpiyush/Music_store_analysis_using_Postgresql" class="btn">View Project</a>
+      </div>
 
-    <footer>
-        © 2025 Piyush Rawat | Built with ❤️
-    </footer>
+      <div class="project-card">
+        <h3>Blinkit Sales Analysis Dashboard</h3>
+        <img src="images/blinkit.png" alt="Blinkit" />
+        <p>• Built an interactive Power BI dashboard...<br>• Analyzed 10,000+ sales records to uncover trends...</p>
+        <a href="https://github.com/Goblinpiyush/BLINKIT_DASBOARD" class="btn">View Project</a>
+      </div>
 
-</body>
-</html>
+      <div class="project-card">
+        <h3>LinkedIn Job Data Analysis</h3>
+        <img src="images/linkedin.png" alt
